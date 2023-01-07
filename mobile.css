@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    margin-inline: auto;
+}
+
+.content1,
+.content2,
+.content3 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#first-part .container {
+    background-color: pink;
+}
+#sec-part .container {
+    background-color: #fff;
+}
+#third-part .container {
+    background-color: #454545;
+    color: white;
+}
+#fourth-part .container {
+    background-color: #C4A484;
+}
+img {
+    width: 90%;
+}
+.content1 .first-col {
+    flex-basis: 50%;
+}
+.content1 .sec-col {
+    flex-basis: 50%;
+}
+.content2 .first-col {
+    flex-basis: 50%;
+}
+.content2 .sec-col {
+    flex-basis: 50%;
+}   
+.content3 .first-col {
+    flex-basis: 50%;
+}
+.content3 .sec-col {
+    flex-basis: 50%;
+}
+
+.content {
+    margin: auto;
+    width: clamp(20rem, 40%, 40%);
+    text-align: center;
+    position: relative;
+    transform: translateY(35%);
+    height: 60vh;
+}
+.content p {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.content h1 {
+    font-size: 50px;
+}
+
+.content1 {
+    width: clamp(5rem, 80%, 80%);
+    margin: auto;
+}
+.content1 p {
+    width: 95%;
+}
+p {
+    font-size: 19px;
+}
+.content2 {
+    width: 80%;
+    margin: auto;
+
+}
+.content2 h2 {
+    padding-bottom: 10px;
+}
+.content2 p {
+    width: 95%;
+}
+.content2 img {
+    text-align: right;
+}
+.content3 {
+    width: 80%;
+    margin: auto;
+}
+#sec-part .container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    position: relative;
+    transform: translateY(140%);
+}
+
+@media only screen and (max-width: 770px) {
+    .content1 .first-col {
+        flex-basis: 100%;
+    }
+    .content1 {
+        height: 80vh;
+    }
+    .content1 .sec-col {
+        flex-basis: 100%;
+    }
+    .content2 .first-col {
+        flex-basis: 100%;
+    }
+    .content2 {
+        height: 80vh;
+    }
+    .content2 .sec-col {
+        flex-basis: 100%;
+        border: 1px solid;
+    }
+    img {
+        width: 100%;
+    }
+    .content3 .first-col {
+        flex-basis: 100%;
+    }
+    .content3 .sec-col {
+        flex-basis: 100%;
+    }
+    .content3 {
+        height: 80vh;
+    }
+    #sec-part .container h2 {
+        transform: translateY(40%);
+    }
+}
+@media only screen and (max-width: 990px) {
+    #first-part .container {
+        height: 70vh;
+    }
+}
